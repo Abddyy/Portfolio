@@ -1,4 +1,3 @@
-// scripts/loadNavbar.js
 document.addEventListener("DOMContentLoaded", function() {
     fetch('navbar.html')
         .then(response => {

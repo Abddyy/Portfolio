@@ -1,4 +1,3 @@
-// scripts/navbar.js
 document.addEventListener("DOMContentLoaded", function() {
     window.onscroll = function() {
         var navbar = document.querySelector('.navbar');
