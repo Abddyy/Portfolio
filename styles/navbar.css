@@ -1,0 +1,49 @@
+.navbar {
+    background-color: transparent;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    transition: background-color 0.5s ease; 
+}
+
+.navbar.scrolled {
+    background-color: #76ABAE;
+}
+
+.navbar .navbar-brand {
+    color: #fff;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.navbar .navbar-nav {
+    margin: 0 auto;
+    font-family: "Times New Roman", Times, serif;
+}
+
+.navbar .navbar-nav .nav-item .nav-link {
+    color: #000000;
+    text-transform: uppercase;
+    padding: 14px 20px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.navbar .navbar-nav .nav-item .nav-link:hover,
+.navbar .navbar-nav .nav-item .nav-link.active {
+    background-color: #31363F;
+    color: #fff;
+}
+
+@media (max-width: 768px) {
+    .navbar .navbar-nav .nav-item {
+        text-align: center;
+    }
+
+    .navbar .navbar-nav .nav-item .nav-link {
+        padding: 10px 15px;
+    }
+
+}
