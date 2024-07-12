@@ -1,0 +1,32 @@
+.bodyBackground{
+    background-color: #233142;
+}
+
+.biography {
+    margin-top: 110px;
+    text-align: left;
+    margin-left: 55%;
+    margin-right: 7%;
+    padding: 0;
+}
+
+.biography h3 {
+    font-family: Consolas, monaco, monospace;
+    font-size: 30px;
+    overflow: hidden;
+    color: #ffffff; /* Neon green text color */
+    white-space: nowrap;
+    margin: 0;
+    font-weight: 900; /* Maximum boldness for the font */
+    padding-right: 5px;
+}
+
+.biography p {
+    font-family: Consolas, monaco, monospace;
+    color: #ffffff; /* Neon green text color */
+    font-weight: 900;
+    font-size: 18px;
+    text-align: justify;
+    margin: 20px 0;
+    line-height: 1.5;
+}
