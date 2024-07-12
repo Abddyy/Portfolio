@@ -1,4 +1,4 @@
-/* navbar.css */
+
 .navbar {
     background-color: transparent;
     position: fixed;
@@ -36,7 +36,7 @@
 .navbar .navbar-nav .nav-item .nav-link.active {
     background-color: #31363F;
     color: #fff;
-    transform: scale(1.1); /* Reduced zoom effect */
+    transform: scale(1.1); 
 }
 
 .navbar .navbar-nav .nav-item .nav-link i {
@@ -45,7 +45,7 @@
 }
 
 .navbar .navbar-nav .nav-item .nav-link:hover i {
-    transform: scale(1.1); /* Reduced zoom effect */
+    transform: scale(1.1); 
 }
 
 .navbar.scrolled .navbar-nav .nav-item .nav-link {
@@ -56,7 +56,7 @@
 .navbar.scrolled .navbar-nav .nav-item .nav-link.active {
     background-color: #31363F;
     color: #fff;
-    transform: scale(1.1); /* Reduced zoom effect */
+    transform: scale(1.1); 
 }
 
 .navbar.scrolled .navbar-nav .nav-item .nav-link i {
@@ -64,7 +64,7 @@
 }
 
 .navbar.scrolled .navbar-nav .nav-item .nav-link:hover i {
-    transform: scale(1.1); /* Reduced zoom effect */
+    transform: scale(1.1);
 }
 
 .social-icons {
