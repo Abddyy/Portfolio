@@ -17,7 +17,7 @@
 }
 
 .navbar .navbar-nav {
-    font-family: 'Roboto', sans-serif;
+    font-family: Consolas, monaco, monospace;
     font-weight: bold;
 }
 
@@ -26,6 +26,7 @@
     text-transform: uppercase;
     padding: 14px 20px;
     transition: background-color 0.3s, color 0.3s, transform 0.2s;
+    font-size: 1.15rem; 
 }
 
 .navbar .navbar-nav .nav-item .nav-link:hover,

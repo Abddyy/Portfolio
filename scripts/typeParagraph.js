@@ -32,15 +32,25 @@ function blinkCursor(cursor) {
     }, 500);
 }
 
-document.addEventListener('DOMContentLoaded', () => {
-    const headingText = "Hi There";
+// Function to start the typing effect
+function startTypingEffect() {
     const headingElement = document.querySelector('.biography h3');
-    typeHeadingText(headingElement, headingText, 0, 60); // Set the speed for typing the heading
+    const headingText = "Hi There";
+    typeHeadingText(headingElement, headingText, 0, 60); // Start typing the heading
 
+    const paragraphElement = document.querySelector('.biography p');
     const paragraphText = `My name is Abdullah Yahya, a 20 years old CS graduate at NNU,
     passionate about programming in different areas, fast learner
     and can work within a team of programmers. Excited to apply my
     skills and gain real-world experience while making a positive impact.`;
-    const paragraphElement = document.querySelector('.biography p');
-    typeParagraphText(paragraphElement, paragraphText, 0, 17, 1000); // Faster typing speed and delayed start
+    typeParagraphText(paragraphElement, paragraphText, 0, 17, 1000); // Start typing the paragraph
+}
+
+// Event listener to trigger typing effect on scroll
+let hasStartedTyping = false;
+window.addEventListener('scroll', () => {
+    if (!hasStartedTyping && window.scrollY > 100) {
+        startTypingEffect();
+        hasStartedTyping = true; // Ensure the typing effect starts only once
+    }
 });

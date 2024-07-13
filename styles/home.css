@@ -2,8 +2,22 @@
     background-color: #233142;
 }
 
+.container .projects h1 {
+    font-family: 'Roboto', sans-serif;
+    color: #295fd3;
+    font-size: 30px;
+    margin: 0;
+    font-weight: 700;
+}
 
-header{
+.container .projects p {
+    font-family: 'Roboto', sans-serif;
+    color: #ffffff;
+    font-size: 18px;
+    margin: 0;
+}
+
+header {
     background: url(../images/background.jpg) no-repeat center center/cover;
     color: white;
     text-align: center;
@@ -29,8 +43,8 @@ header{
     margin-top: 110px;
     padding: 0 7%; 
 }
-.biography,
-.projects {
+
+.biography, .projects {
     flex: 1; 
     padding: 0;
     box-sizing: border-box; 
@@ -64,22 +78,21 @@ header{
 .projects {
     margin-right: 5%;
 }
+
 header h1 {
     font-family: Consolas, monaco, monospace;
     font-size: 50px;
     margin: 0;
     font-weight: 900;
     text-shadow: 0 0 10px #000000, 0 0 10px #000000;
-
 }
 
-header h2{
+header h2 {
     font-family: Consolas, monaco, monospace;
     font-size: 30px;
     margin: 0;
     font-weight: 900;
     text-shadow: 0 0 10px #000000, 0 0 10px #000000;
-
 }
 
 .container .projects h1, 
@@ -87,10 +100,34 @@ header h2{
     margin: 0 0 20px 0;
 }
 
-.auto-type{
+.auto-type {
     font-family: Consolas, monaco, monospace;
     text-align: center;
     font-weight: bolder;
     text-shadow: 0 0 10px #000000, 0 0 10px #000000;
+}
 
+.header-image {
+    position: relative;
+    width: 100%;
+    height: 400px; /* Adjust as needed */
+    background: url('images/background.jpg') no-repeat center center/cover;
+}
+
+.header-image::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, #233142, rgba(35, 49, 66, 0));
+    /* Adjust the colors as needed */
+}
+
+.content {
+    padding: 20px;
+    color: white;
+    background-color: #233142;
+    /* Your other styles */
 }
