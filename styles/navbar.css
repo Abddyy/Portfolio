@@ -1,6 +1,6 @@
 /* navbar.css */
 .navbar {
-    background-color: rgba(31, 31, 31, 0); /* Start fully transparent */
+    background-color: rgba(34, 40, 49, 0); /* Start fully transparent */
     position: fixed;
     width: 100%;
     top: 0;
