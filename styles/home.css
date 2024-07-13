@@ -2,6 +2,26 @@
     background-color: #233142;
 }
 
+
+header{
+    background: url(../images/background.jpg) no-repeat center center/cover;
+    color: white;
+    text-align: center;
+    padding: 180px 0;
+    position: relative;
+}
+
+.profile-pic {
+    width: 175px;
+    height: 175px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translateY(-50%);
+    border: 2px solid #0000006e;
+}
+
 .container {
     display: flex;
     justify-content: space-between; 
@@ -44,8 +64,33 @@
 .projects {
     margin-right: 5%;
 }
+header h1 {
+    font-family: Consolas, monaco, monospace;
+    font-size: 50px;
+    margin: 0;
+    font-weight: 900;
+    text-shadow: 0 0 10px #000000, 0 0 10px #000000;
+
+}
+
+header h2{
+    font-family: Consolas, monaco, monospace;
+    font-size: 30px;
+    margin: 0;
+    font-weight: 900;
+    text-shadow: 0 0 10px #000000, 0 0 10px #000000;
+
+}
 
 .container .projects h1, 
 .container .projects p {
     margin: 0 0 20px 0;
+}
+
+.auto-type{
+    font-family: Consolas, monaco, monospace;
+    text-align: center;
+    font-weight: bolder;
+    text-shadow: 0 0 10px #000000, 0 0 10px #000000;
+
 }

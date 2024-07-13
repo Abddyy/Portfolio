@@ -11,10 +11,12 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap">
 </head>
 <body class="bodyBackground">
-    <div class="header-image">
-        <img src="images/background.jpg" alt="Header Image" draggable="false">
-    </div>
-    <div id="navbar-placeholder"></div>
+    <header>
+        <div id="navbar-placeholder"></div>
+        <img src="images/me.jpg" alt="My Image" class="profile-pic" loading="lazy">
+        <h1>Abdallah Yahya</h1>
+        <h2>I'm a <span class="auto-type"></span></h2>
+    </header>
     <!-- ============================================ -->
     <div class="container">
         <div class="projects">
@@ -47,5 +49,14 @@
     <script src="scripts/navbar.js"></script>
     <script src="scripts/typeHeading.js"></script>
     <script src="scripts/typeParagraph.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+        var typed = new Typed(".auto-type", {
+            strings: ["Full-Stack Developer", "Freelancer"],
+            typeSpeed: 100,
+            backSpeed: 50,
+            loop: true,
+        });
+    </script>   
 </body>
 </html>
