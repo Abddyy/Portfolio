@@ -131,3 +131,43 @@ header h2 {
     background-color: #233142;
     /* Your other styles */
 }
+
+/* Contact Me Section */
+.contact-me {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #2a3b4c;
+    border-radius: 10px;
+}
+
+.contact-me h3 {
+    font-family: Consolas, monaco, monospace;
+    font-size: 24px;
+    color: #ffffff;
+    font-weight: 900;
+    margin-bottom: 20px;
+}
+
+.contact-me ul {
+    list-style: none;
+    padding: 0;
+    font-family: Consolas, monaco, monospace;
+    color: #ffffff;
+    font-size: 18px;
+}
+
+.contact-me ul li {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.contact-me ul li i {
+    margin-right: 10px;
+    font-size: 20px;
+}
+.cursor {
+    display: inline-block;
+    opacity: 1;
+    transition: opacity 0.5s ease;
+}
