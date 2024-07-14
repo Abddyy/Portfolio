@@ -1,44 +1,74 @@
-/* styles/home.css */
 body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    margin: 0; /* Ensure there's no margin around the body */
+    margin: 0;
 }
 
 .main-content {
-    flex: 1; /* This makes the main content take up all available space */
+    flex: 1;
 }
 
 .footer {
-    background-color: rgb(34, 40, 49); /* Set background color to rgb(31, 31, 31) */
+    background-color: rgb(34, 40, 49);
     color: white;
-    padding: 20px 0;
+    padding: 10px 0;
     width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer .row {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.footer .col-md-6 {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.footer .col-md-6.text-end {
+    justify-content: flex-end;
+}
+
+.footer .social-icons {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
 }
 
 .footer .social-icon {
     color: white;
-    margin-right: 10px; /* Adjust margin for the left alignment */
-    transition: color 0.3s;
+    transition: color 0.3s, background-color 0.3s, transform 0.2s;
+    text-transform: uppercase;
+    padding: 10px 15px;
+    font-size: 1.15rem;
+    display: inline-block;
+    margin-right: -4px;
 }
 
 .footer .social-icon:hover {
-    color: #295fd3; /* Change color on hover */
-}
-
-.footer .social-icon i {
-    font-size: 1.2rem;
-    transition: transform 0.2s;
-    
-}
-
-.footer .social-icon:hover i {
+    background-color: #31363F;
     transform: scale(1.1);
+    z-index: 1;
+    position: relative;
 }
 
 .footer p {
     margin: 0;
 }
 
-/* Add this to your existing CSS file to maintain consistency */
+@media (max-width: 768px) {
+    .footer .social-icons,
+    .footer .col-md-6 {
+        justify-content: center;
+    }
+
+    .footer p {
+        text-align: center;
+    }
+}
