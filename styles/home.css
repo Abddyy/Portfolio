@@ -1,3 +1,4 @@
+/* home.css */
 .bodyBackground {
     background-color: #233142;
 }
@@ -23,6 +24,16 @@ header {
     text-align: center;
     padding: 180px 0;
     position: relative;
+}
+
+header::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px; /* Adjust this to control the gradient height */
+    background: linear-gradient(to bottom, rgba(34, 40, 49, 0) 0%, #233142 100%);
 }
 
 .profile-pic {
@@ -54,6 +65,12 @@ header {
     margin-left: 5%;
 }
 
+.projects {
+    margin-right: 5%;
+    margin-top: -5px;
+    
+}
+
 .biography h3 {
     font-family: Consolas, monaco, monospace;
     font-size: 30px;
@@ -73,10 +90,6 @@ header {
     text-align: justify;
     margin: 20px 0;
     line-height: 1.5;
-}
-
-.projects {
-    margin-right: 5%;
 }
 
 header h1 {
@@ -110,7 +123,7 @@ header h2 {
 .header-image {
     position: relative;
     width: 100%;
-    height: 400px; /* Adjust as needed */
+    height: 400px; 
     background: url('images/background.jpg') no-repeat center center/cover;
 }
 
@@ -120,24 +133,29 @@ header h2 {
     bottom: 0;
     left: 0;
     width: 100%;
-    height: 100%;
+    height: 100px; /* Adjust this to control the gradient height */
     background: linear-gradient(to top, #233142, rgba(35, 49, 66, 0));
-    /* Adjust the colors as needed */
 }
 
 .content {
     padding: 20px;
     color: white;
     background-color: #233142;
-    /* Your other styles */
 }
 
-/* Contact Me Section */
 .contact-me {
     margin-top: 30px;
     padding: 20px;
     background-color: #2a3b4c;
     border-radius: 10px;
+    opacity: 0;
+    transform: translateY(-100%);
+    transition: transform 1s ease, opacity 1.5s ease; /* Adjusted for a smoother transition */
+}
+
+.contact-me.show {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 .contact-me h3 {
@@ -166,6 +184,7 @@ header h2 {
     margin-right: 10px;
     font-size: 20px;
 }
+
 .cursor {
     display: inline-block;
     opacity: 1;
