@@ -2,7 +2,7 @@
     background-color: #233142;
 }
 
-#loading {
+#loader {
     display: none;
     position: fixed;
     width: 100%;
